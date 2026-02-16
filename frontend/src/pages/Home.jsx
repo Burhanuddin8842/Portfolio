@@ -5,9 +5,22 @@ import { AiFillLinkedin } from "react-icons/ai";
 import { BsGithub } from "react-icons/bs"; 
 import { HiDocumentDownload } from "react-icons/hi"; 
 import { AiOutlineArrowRight } from "react-icons/ai"; 
-import React from 'react'
+import React, { useReducer } from 'react'
 
 const Home = () => {
+  let initscreen={
+    git: false,
+    link:false,
+    fiverr: false,
+    freelancer: false,
+    upwork: false
+  }
+
+  const reducer = (state,action)=>{
+    
+  }
+  let [screen,dispatch]=useReducer(reducer,initscreen)
+
   return (
     <div className='text-white min-h-[93vh] flex items-center justify-center px-8 grid grid-cols-2' id='home'>
       <div className="w-full max-w-2xl col-span-1">
